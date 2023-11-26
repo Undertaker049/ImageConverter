@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{C2BFDC99-543A-45CA-826C-9A8C1CB29F60}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>P3</RootNamespace>
+    <AssemblyName>P3</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Format.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Format.Designer.cs">
+      <DependentUpon>Form_Format.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Format_Full.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Format_Full.Designer.cs">
+      <DependentUpon>Form_Format_Full.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm_Full.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_Full.Designer.cs">
+      <DependentUpon>MainForm_Full.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_Format.resx">
+      <DependentUpon>Form_Format.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Format_Full.resx">
+      <DependentUpon>Form_Format_Full.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_Full.resx">
+      <DependentUpon>MainForm_Full.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\260796488008212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\055626792917b80492ecfd35677bc391.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuXRP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adf4132c2660e304837035f46c3b0839.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon7-transformed.png" />
+    <None Include="close_active.png" />
+    <None Include="close_inactive.png" />
+    <None Include="maximize_active.png" />
+    <None Include="maximize_inactive.png" />
+    <None Include="minimize_active.png" />
+    <None Include="minimize_inactive.png" />
+    <None Include="icon7.ico" />
+    <Content Include="Resources\SeldomScene-B6lG.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="SETI2.gif" />
+    <None Include="SETI1.gif" />
+    <None Include="back1.gif" />
+    <None Include="Background1.gif" />
+    <None Include="button1.gif" />
+    <None Include="cycle1.gif" />
+    <None Include="interface1.gif" />
+    <None Include="interface2.gif" />
+    <None Include="Load.gif" />
+    <None Include="load2.gif" />
+    <None Include="load3.gif" />
+    <None Include="load4.gif" />
+    <None Include="picture1.gif" />
+    <None Include="picture2.gif" />
+    <None Include="picture3.gif" />
+    <None Include="picture4.gif" />
+    <None Include="planet1.gif" />
+    <Content Include="Resources\back1.gif" />
+    <Content Include="Resources\Background1.gif" />
+    <Content Include="Resources\cycle1.gif" />
+    <Content Include="Resources\interface1.gif" />
+    <Content Include="Resources\interface2.gif" />
+    <Content Include="Resources\Load.gif" />
+    <Content Include="Resources\load2.gif" />
+    <Content Include="Resources\load3.gif" />
+    <Content Include="Resources\load4.gif" />
+    <Content Include="Resources\picture1.gif" />
+    <Content Include="Resources\picture2.gif" />
+    <Content Include="Resources\picture3.gif" />
+    <Content Include="Resources\picture4.gif" />
+    <Content Include="Resources\planet1.gif" />
+    <Content Include="Resources\SETI1.gif" />
+    <Content Include="Resources\SETI2.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
