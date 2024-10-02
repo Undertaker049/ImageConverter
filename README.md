@@ -1,1 +1,2 @@
-# - Stylized image format converter
+#ImageConverter 
+Stylized image format converter
