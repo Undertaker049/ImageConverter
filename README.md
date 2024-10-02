@@ -1,1 +1,1 @@
-# -
+# - Stylized image format converter
